@@ -65,6 +65,7 @@ If you've followed Task 0 to the letter, plain TCP should be in use (hint: check
  talks to two or more other hosts. Make sure the scenario is reproducible: the same random permutation must be generated every time the 
  script is run.
  * Figure out how to collect the results. We are interested in the average bandwidth of each individual flow.
+ * Plot the results for vanilla TCP.
  
 Multipath TCP
 -------------
@@ -77,8 +78,10 @@ Further, we want to force MPTCP to open a certain number of subflows, regardless
 To do that, we employ the "ndiffports" path manager:
 ```
 sudo sysctl -w net.mptcp.mptcp_path_manager=ndiffports
+echo N > /sys/module/mptcp_ndiffports/parameters/num_subflows
 ```
 
+**TASK 3**: Re-run the experiment using 2 and 8 subflows. Plot the results.
 
 Quick and dirty troubleshooting
 -------------------------------
