@@ -39,6 +39,12 @@ Comment out in /etc/default/grub
 #GRUB_TIMEOUT=0
 ```
 
+Update Grub and restart:
+```
+sudo update-grub
+sudo reboot
+```
+
 Disable MPTCP (for now):
 ```
 sudo sysctl -w net.mptcp.mptcp_enabled=0
