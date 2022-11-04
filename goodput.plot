@@ -7,7 +7,7 @@ set xlabel "Rank"
 set ylabel "Goodput (Mbps)"
 
 plot \
-	"tcp.dat"     using 0:1 w l title "TCP", \
-	"mptcp_2.dat" using 0:1 w l title "MPTCP, 2 subflows", \
-	"mptcp_8.dat" using 0:1 w l title "MPTCP, 8 subflows"
+	"tcp.dat"     using 0:1 with lines title "TCP", \
+	"mptcp_2.dat" using 0:1 with lines title "MPTCP, 2 subflows", \
+	"mptcp_8.dat" using 0:1 with lines title "MPTCP, 8 subflows"
 
