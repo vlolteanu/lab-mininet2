@@ -52,7 +52,7 @@ along with with some unrealistic data (`tcp.dat`, `mptcp_2.dat`, `mptcp_8.dat`).
 
 **TASK 1**: Familiarize yourself with gnuplot.
  * Inspect the four files.
- * Run the script and inspect the output. (The result is a carricature of what we'll be producing today.)
+ * Run the script and inspect the output. (The result is a caricature of what we'll be producing today.)
 
 Vanilla TCP
 -----------
